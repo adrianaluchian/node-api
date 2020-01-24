@@ -8,4 +8,4 @@ Basic NodeJS API.
 
 `test`: runs all tests found in the 'src' folder
 
-`tdd`: watches for any changes in the 'src' folder and runs lint and test´
+`start`: run server locally

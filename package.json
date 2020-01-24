@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest --colors --passWithNoTests",
-    "tdd": "watch 'npm run lint && npm run test' src"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "devDependencies": {
     "eslint": "~6.8.0",
     "jest": "~25.1.0",
+    "nodemon": "~2.0.2",
     "watch": "~1.0.2"
   },
   "jest": {
@@ -26,7 +27,8 @@
   "eslintConfig": {
     "env": {
       "node": 1,
-      "jest": true
+      "jest": true,
+      "es6": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -38,6 +40,7 @@
     ]
   },
   "dependencies": {
-    "express": "~4.17.1"
+    "express": "~4.17.1",
+    "node-graceful": "~3.0.0"
   }
 }
