@@ -1,7 +1,8 @@
-const foo = () => {
-    return 1;
-}
+const express = require('express');
 
-module.exports = {
-    foo
-};
+const port = 3000;
+const app = express();
+
+app.get('/', (req, res) => res.send('Hello'));
+
+app.listen(port, () => console.log(`API listenning on port ${port}`));

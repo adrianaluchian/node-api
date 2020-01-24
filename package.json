@@ -8,7 +8,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --colors",
+    "test": "jest --colors --passWithNoTests",
     "tdd": "watch 'npm run lint && npm run test' src"
   },
   "repository": {
@@ -36,5 +36,8 @@
     "ignorePatterns": [
       "node_modules/"
     ]
+  },
+  "dependencies": {
+    "express": "~4.17.1"
   }
 }
