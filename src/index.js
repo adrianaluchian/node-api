@@ -9,6 +9,7 @@ app.use(cors());
 
 app.get('/', (req, res) => res.send('Hello'));
 
+// eslint-disable-next-line no-console
 const server = app.listen(port, () => console.log(`Server listening on port ${port}`));
 
 graceful.on('exit', () => {
@@ -17,7 +18,7 @@ graceful.on('exit', () => {
       if (error) {
         return reject(error);
       }
-      resolve();
+      return resolve();
     });
   });
 });
