@@ -15,6 +15,12 @@
     "type": "git",
     "url": "git+https://github.com/aluchian/node-api.git"
   },
+  "dependencies": {
+    "body-parser": "~1.19.0",
+    "cors": "~2.8.5",
+    "express": "~4.17.1",
+    "node-graceful": "~3.0.0"
+  },
   "devDependencies": {
     "eslint": "~6.8.0",
     "jest": "~25.1.0",
@@ -26,21 +32,17 @@
   },
   "eslintConfig": {
     "env": {
-      "node": 1,
+      "node": true,
       "jest": true,
       "es6": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-      "ecmaVersion": 7,
+      "ecmaVersion": 8,
       "sourceType": "module"
     },
     "ignorePatterns": [
       "node_modules/"
     ]
-  },
-  "dependencies": {
-    "express": "~4.17.1",
-    "node-graceful": "~3.0.0"
   }
 }
